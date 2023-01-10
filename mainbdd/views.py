@@ -212,7 +212,7 @@ class FavsOfUser(APIView):
     
     """->Removes a rea from favorits of user defined by user_id url argument"""
     """->Body contains: rea_id"""
-    def delete(self, request, user_id, format=None):
+    def delete(self, request, format=None):
         id_token  = request.headers.get('Authorization')
         try:
             user = getUser(id_token)

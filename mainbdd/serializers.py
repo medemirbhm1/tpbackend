@@ -7,7 +7,7 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         #We'll start with the none relational fields... i don't think we need
         #_the relational ones ...
-        fields = ['first_name','last_name','username','email','phone_num' , 'picture']
+        fields = ['id','first_name','last_name','username','email','phone_num' , 'picture']
 
 
 class PhotoSerializer(serializers.ModelSerializer):
